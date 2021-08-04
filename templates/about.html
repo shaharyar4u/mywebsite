@@ -1,0 +1,208 @@
+{% extends 'base.html' %}
+
+{% block head %} 
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!--meta name="viewport" content="width=device-width, initial-scale=1"-->
+    <title>Shaharyar Alam Ansari</title>
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/font-awesome.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="static/css/main.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    [endif]-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-51302339-1', 'kamsolutions.pl');
+      ga('send', 'pageview');
+    </script>
+
+{% endblock head %}
+
+{% block title %}About{% endblock title %}
+
+{% block body %}
+
+{% load static %}
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div id="photo-header" class="text-center">
+            <!-- PHOTO (AVATAR) -->
+            <div id="photo">
+              <img src="{% static 'img/pic.jpg' %}" alt="avatar">
+            </div>
+            <div id="text-header">
+              <h1>Hello,<br> my name is <span>Shaharyar Alam Ansari</span>&nbsp;and this is my resume</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-7">
+          <!-- Working At -->
+		  <div class="box">
+            <h2>Now Working At!</h2>
+            <p>AlmaMate Info. Tech. Pvt. Ltd., Sector 63-A, Noida, U.P </p>
+          </div>
+          <div class="box">
+		  <!-- ABOUT ME -->
+            <h2>Career Objective</h2>
+            <p>To use my present knowledge and skills for learning new technologies to put them in optimum use for the organization.</p>
+          </div>
+          <!-- EDUCATION -->
+          <div class="box">
+            <h2>Education</h2>
+            <ul id="education" class="clearfix">
+              <li>
+                <div class="year pull-left">2016</div>
+                <div class="description pull-right">
+                  <h3>Pursuing MCA From Department of Computer Science, AMU, Aligarh.</h3>
+                  <p>MCA Percentage is 82.9%</p>
+                </div>
+              </li>
+              <li>
+                <div class="year pull-left">2014</div>
+                <div class="description pull-right">
+                  <h3>BCA from Aligarh Muslim University</h3>
+                  <p>Subjects: <b>Main</b>: Computer Applications<br>
+                              <b>Subsidiary</b>: Mathematics ,Physics.<br>
+            BCA-F Percentage: 86.20% </p>
+                </div>
+              </li>
+              <li>
+                <div class="year pull-left">2010</div>
+                <div class="description pull-right">
+                  <h3>Intermediate from AMU Board</h3>
+                  <p>Subjects: Mathematics, Physics, Chemistry,
+                            English. <br>
+            Percentage: 73.25 %  </p>
+                </div>
+              </li>
+              <li>
+                <div class="year pull-left">2007</div>
+                <div class="description pull-right">
+                  <h3>High School from  CBSE Board</h3>
+                  <p>Subjects: Mathematics, Science, Social Science,
+                              English, Hindi, Computer.<br>
+             Percentage: 79.00%</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- EXPERIENCES -->
+          <div class="box">
+            <h2>Experiences</h2>
+            <div class="job clearfix">
+              <div class="col-xs-3">
+                <div class="where">csdamu.com</div>
+                <div class="year">2011 to Present</div>
+              </div>
+              <div class="col-xs-9">
+                <div class="profession">Front-end developer & Moderator</div>
+                <div class="description"></div>
+              </div>
+            </div>
+            <div class="job clearfix">
+              <div class="col-xs-3">
+                <div class="where">Banking Management System</div>
+                <div class="year">2014</div>
+              </div>
+              <div class="col-xs-9">
+                <div class="profession">Web Developer</div>
+                <div class="description"></div>
+              </div>
+            </div>
+          </div>
+		  <div class="box">
+            <h2>Strenth</h2>
+            <div class="hobby">Leadership Qualities</div>
+            <div class="hobby">Good Communicator</div>
+            <div class="hobby">Adaptive to Situations</div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-5">
+		<!-- Technology Learning -->
+          <div class="box">
+            <h2>Working on Technology</h2>
+            <div class="skills">
+              <div class="item-skills" data-percent="1.00">SalesForce</div>
+              </div>
+          </div>
+          <!-- CONTACT -->
+          <div class="box clearfix">
+            <h2>Contact</h2>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-phone fa-fw"></span></div>
+              <div class="title only pull-right">+91-9454131786</div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span></div>
+              <div class="title only pull-right"><a href="mailto:shaharyargd@gmail.com">shaharyargd@gmail.com</a></div>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-twitter fa-fw"></span></div>
+              <a href="https://twitter.com/shaharyaralig"><div class="title pull-right">Twitter</div>
+              <div class="description pull-right">https://twitter.com/shaharyargzp</div></a>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-facebook fa-fw"></span></div>
+              <a href="https://www.facebook.com/shaharyargzp"><div class="title pull-right">Facebook</div>
+              <div class="description pull-right">https://www.facebook.com/shaharyargzp</div></a>
+            </div>
+            <div class="contact-item">
+              <div class="icon pull-left text-center"><span class="fa fa-skype fa-fw"></span></div>
+              <a href="https://secure.skype.com/portal/overview"><div class="title pull-right">Skype</div>
+              <div class="description pull-right">https://secure.skype.com/portal/overview</div></a>
+            </div>
+          </div>
+          <!-- SKILLS -->
+          <div class="box">
+            <h2>Skills</h2>
+            <div class="skills">
+              <div class="item-skills" data-percent="1.00">HTML</div>
+              <div class="item-skills" data-percent="0.90">CSS</div>
+              <div class="item-skills" data-percent="0.80">C++</div>
+              <div class="item-skills" data-percent="0.75">MS Office</div>
+              <div class="item-skills" data-percent="0.25">DBMS</div>
+              <div class="skills-legend clearfix">
+                <div class="legend-left legend">Beginner</div>
+                <div class="legend-left legend"><span>Proficient</span></div>
+                <div class="legend-right legend"><span>Expert</span></div>
+                <div class="legend-right legend">Master</div>
+              </div>
+            </div>
+          </div>
+          <!-- LANGUAGES -->
+          <div class="box">
+            <h2>Languages</h2>
+            <div id="language-skills">
+              <div class="skill"> English<div class="icons pull-right"><div style="width: 80%;" class="icons-red"></div></div></div>
+              <div class="skill"> Hindi<div class="icons pull-right"><div style="width: 60%;" class="icons-red"></div></div></div>
+			  <div class="skill"> Urdu<div class="icons pull-right"><div style="width: 60%;" class="icons-red"></div></div></div>
+			  </div>
+          </div>
+          <!-- HOBBIES -->
+          <div class="box">
+            <h2>Hobbies</h2>
+            <div class="hobby">Interacting with Peoples.</div>
+            <div class="hobby">Net-Surfing</div>
+            <div class="hobby">Travelling</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JQUERY -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <!-- BOOTSTRAP -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!-- SCRIPTS -->
+    <script src="{% static 'js/scripts.js' %}"></script>
+  </body>
+{% endblock body %}
