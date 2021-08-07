@@ -127,3 +127,8 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static") 
 ]
+
+#Mailchimp Integration
+MAILCHIMP_API_KEY='324342-US5'
+MAILCHIMP_DATA_CENTER= 'US5'
+MAILCHIMP_EMAIL_LIST_ID='000d05dc97'

@@ -1,10 +1,17 @@
 from django.shortcuts import render, HttpResponse
+#from django.http import HttpResponseRedirect
 from datetime import datetime
 from home.models import Contact
 from home.models import Registration
 from django.contrib import messages
 from home import views
+#from django.conf import settings
+#from .forms import EmailSignupForm
+#from .models import signup
+import requests
 import pyrebase
+#from marketing.forms import EmailSignupForm
+
 
 '''
 config={
@@ -36,6 +43,57 @@ def index(request):
     })
     # return HttpResponse("this is homepage")
 '''
+#Mailchimp Integration
+'''MAILCHIMP_API_KEY=settings.MAILCHIMP_API_KEY
+MAILCHIMP_DATA_CENTER=settings.MAILCHIMP_DATA_CENTER
+MAILCHIMP_EMAIL_LIST_ID=settings.MAILCHIMP_EMAIL_LIST_ID 
+
+api_url=f'https://{MAILCHIMP_DATA_CENTER}.api.mailchimp.com/3.0'
+members_endpoint=f'{api_url'}/lists/{MAILCHIMP_EMAIL_LIST_ID}/members'
+
+def subscribe(email):
+    data= {
+        "email_address":email,
+        "status":"subscribed"
+    }
+    r=request.post(
+        members_endpoints
+        auth=("", MAILCHIMP_API_KEY),
+        data=json.dump(data)
+    )
+    return r.status_code,r.json()
+
+def email_list_signup(request):
+    form=EmailSignupForm(request.POST or None)
+    if request.method== "POST":
+        if form.is_valid():
+            email_signup_qs=Signup.objects.filter(email=form.instance.email)
+            if email_signup_qs.exists():
+                messages.info(request,"You are already subscribed")
+            else:
+                subscribe(form.instance.email)
+                form.save()
+    return HttpResponseRedirect(request.META.get("HTTP_REFERER"))
+
+
+def base(request):
+    featured=Post.objects.filter(featured=True)
+    latest=Post.objects.order_by('=timestamp')[0:3] 
+    form= EmailSignupForm()
+    if request.method=="POST:
+        email= request.POST["email"]
+        new_signup= Signup()
+        new_signup.email= email
+        new_signup.save()
+        )  
+
+    context={
+        'object_list':featured,
+        'latest': latest
+        'form': form
+    }
+    return render(request, 'base.html', context)'''   
+
 def index(request):
     return render(request, 'index.html')
 
@@ -44,6 +102,9 @@ def test(request):
 
 def about(request):
     return render(request, 'about.html')
+
+def book(request):
+    return render(request, 'book.html')
 
 def services(request):
     return render(request, 'services.html')
@@ -56,6 +117,9 @@ def thought(request):
 
 def blog(request):
     return render(request, 'blog.html')
+
+def video(request):
+    return render(request, 'video.html')
 
 def desacademy(request):
     if request.method == "POST":

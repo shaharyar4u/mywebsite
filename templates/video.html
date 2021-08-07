@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% block title %}Thoughts{% endblock title %}
+
+{% block body %}
+<div>
+    <div class="container-fluid px-0 mb-3" >
+        <img src="static/img/video.jpg" class="d-block w-100 mx-0 my-0" alt="...">
+    </div>
+        </div>
+        <h1 align="center">Video Tutorials!</h1>
+<br>
+<!--Video Tutorials-->
+<div class="container-fluid pb-video-container">
+    <div class="col-md-10 offset-md-1">
+        <h3 class="text-xs-center"><b>Sample Video Tutorials:</b> For more videos visit our Youtube Channel | DES Academy</h3>
+        <div class="row pb-row">
+            <div class="col-md-3 pb-video">
+                <iframe width="100%" height="230" src="https://www.youtube.com/embed/bi0hZPfIe90" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <label class="form-control label-warning text-xs-center">ऐसे होगा AMU 11th Entrance Qualify</label>
+            </div>
+            <div class="col-md-3 pb-video">
+                <iframe width="100%" height="230" src="https://www.youtube.com/embed/UowEEtVRg3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <label class="form-control label-warning text-xs-center">AMU MCA Entrance Exams Pattern</label>
+            </div>
+            <div class="col-md-3 pb-video">
+                <iframe width="100%" height="230" src="https://www.youtube.com/embed/mwGpgjhuVP8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <label class="form-control label-warning text-xs-center">NIMCET Eligibility, Pattern & Syllabus </label>
+            </div>
+            <div class="col-md-3 pb-video">
+                <iframe width="100%" height="230" src="https://www.youtube.com/embed/o-dWf--gkLs?list=PLBsjAsfFyzJZmF7dakTgSmxyMB-n5GQEm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <label class="form-control label-warning text-xs-center">Memory Units in Computer</label>
+            </div>
+        </div>
+        <div class="row pb-row">
+            <div class="col-md-3 pb-video">
+                <iframe width="100%" height="230" src="https://www.youtube.com/embed/RaML20V18dY?list=PLBsjAsfFyzJaDn3n0GkGLYJyyblZ73_io" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <label class="form-control label-warning text-xs-center">Introduction to Data Structures</label>
+            </div>
+            <div class="col-md-3 pb-video">
+                <iframe width="100%" height="230" src="https://www.youtube.com/embed/It9iPvPswpI?list=PLBsjAsfFyzJaAjlzMN6gwDLnq3ux13aI5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <label class="form-control label-warning text-xs-center">Introduction to Operating System</label>
+            </div>
+            <div class="col-md-3 pb-video">
+                <iframe width="100%" height="230" src="https://www.youtube.com/embed/dcwDHyZXNxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <label class="form-control label-warning text-xs-center">Reasoning | Numeric Series</label>
+            </div>
+            <div class="col-md-3 pb-video">
+                <iframe width="100%" height="230" src="https://www.youtube.com/embed/8muHyZJiwQo" title="YouTube video player" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <label class="form-control label-warning text-xs-center">एएमयू प्रवेश परीक्षा कब है 2021-22</label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .pb-video-container {
+        padding-top: 20px;
+        background: #bdc3c7;
+        font-family: Lato;
+    }
+
+    .pb-video {
+        border: 1px solid #e6e6e6;
+        padding: 5px;
+    }
+
+        .pb-video:hover {
+            background: #2c3e50;
+        }
+
+    .pb-video-frame {
+        transition: width 2s, height 2s;
+    }
+
+        .pb-video-frame:hover {
+            height: 300px;
+        }
+
+    .pb-row {
+        margin-bottom: 10px;
+    }
+</style>
+
+
+{% endblock body %}

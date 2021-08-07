@@ -37,23 +37,32 @@
         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/about">About Me</a>
+        <a class="nav-link" href="/about">About Director</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="/services" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Services
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="/research">Research Article</a>
-          <a class="dropdown-item" href="/blog">Blog Post</a>
-          <a class="dropdown-item" href="/thought">Thoughts</a>
+          <a class="dropdown-item" href="/research">Our Research Article</a>
+          <a class="dropdown-item" href="/blog">Our Blog Post</a>
+          <a class="dropdown-item" href="/thought">Thoughts of the Day</a>
       </li>
+      
       <li class="nav-item">
-        <a class="nav-link" href="/contact">Contact Me</a>
+        <a class="nav-link" href="/desacademy">DES Academy</a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="/desacademy">DES Academy</a>
+        <a class="nav-link" href="/video">Video Tutorials</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/book">Our Books</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/contact">Contact Us</a>
       </li>
     
     </ul>
@@ -123,6 +132,7 @@
     <!-- Section: Form -->
     <section class="">
       <form action="">
+      <!--{% csrf_token %}-->
         <!--Grid row-->
         <div class="row d-flex justify-content-center">
           <!--Grid column-->
@@ -136,6 +146,7 @@
           <!--Grid column-->
           <div class="col-md-5 col-12">
             <!-- Email input -->
+            {{form}}
             <div class="form-outline form-white mb-4">
               <input type="email" id="form5Example2" class="form-control" />
               <label class="form-label" for="form5Example2">Email address</label>
